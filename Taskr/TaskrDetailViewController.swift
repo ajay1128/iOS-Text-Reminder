@@ -41,7 +41,7 @@ class TaskrDetailViewController: UIViewController {
         
         let parameters: Parameters = [
             "To":  phoneNumber!.text! ,
-            "Body":  hostName!.text! + " has assigned the task " + titleTextField.text! + " " + dateFormatter.string(from: deadlineDatePicker.date)
+            "Body":  hostName!.text! + " has assigned: " + titleTextField.text! + "\n" + dateFormatter.string(from: deadlineDatePicker.date)
         ]
         
         Alamofire.request("https://black-locust-4228.twil.io/sms", method: .post, parameters: parameters, headers: headers).response { response in
