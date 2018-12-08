@@ -76,6 +76,9 @@
                                 <state key="normal" title="Contacts">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="AccessContacts:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rea-3s-rOA"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="201203-omag-organized-mind-600x411.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="WxM-4P-gnb">
                                 <rect key="frame" x="107" y="72" width="165" height="106"/>
