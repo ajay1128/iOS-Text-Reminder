@@ -10,7 +10,7 @@ class TaskList {
     func addTask(_ task: Task) {
         var taskDictionary = UserDefaults.standard.dictionary(forKey: TASKS_KEY) ?? [:]
         
-        taskDictionary[task.ID] = ["ID" : task.ID, "title" : task.title, "deadline" : task.deadline]
+        taskDictionary[task.ID] = ["ID" : task.ID, "hostname" : task.hostname,"phone" : task.phone, "title" : task.title, "deadline" : task.deadline, "assignee" : task.assignee]
         UserDefaults.standard.set(taskDictionary, forKey: TASKS_KEY)
         
         let notification = UILocalNotification()
@@ -29,7 +29,9 @@ class TaskList {
         let items = Array(taskDictionary.values)
         let taskArray = items.map({Task(ID: $0["ID"] as! String!,
             title: $0["title"] as! String,
-            deadline: $0["deadline"] as! Date)})
+            deadline: $0["deadline"] as! Date,
+            hostname: $0["hostname"] as? String ?? " ",
+            phone: $0["phone"] as? String ?? " ", assignee: $0["assignee"] as? String ?? " ")})
         
         return taskArray.sorted(by: {(left: Task, right:Task) -> Bool in
             left.deadline.compare(right.deadline) == .orderedAscending})

@@ -24,7 +24,7 @@ class TaskrTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "taskCell", for: indexPath)
         let task = taskList[indexPath.row]
-        cell.textLabel?.text = task.title
+        cell.textLabel?.text = "Task: " + task.title + "\nAssigned to: " + task.assignee + "\nNumber: " + task.phone
         if task.pastDeadline {
             cell.textLabel?.textColor = UIColor.red
             cell.detailTextLabel?.textColor = UIColor.red

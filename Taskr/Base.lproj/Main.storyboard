@@ -27,62 +27,80 @@
                                     <!--2016-05-08 21:16:05 +0000-->
                                 </date>
                             </datePicker>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="15E-fR-fm8">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Task Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="15E-fR-fm8">
                                 <rect key="frame" x="20" y="270" width="339" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nmj-EQ-Hb1">
                                 <rect key="frame" x="203" y="570" width="34" height="30"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <state key="normal" title="Save"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="save:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jim-RX-zSg"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sQX-hv-V50">
-                                <rect key="frame" x="20" y="308" width="339" height="30"/>
-                                <nil key="textColor"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sQX-hv-V50">
+                                <rect key="frame" x="20" y="308" width="261" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXC-ml-JEO">
                                 <rect key="frame" x="116" y="570" width="68" height="30"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Send Text"/>
+                                <state key="normal" title="Send Text">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="sendData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S8l-ND-eCq"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Host Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5jM-hW-hKr">
-                                <rect key="frame" x="20" y="232" width="339" height="30"/>
-                                <nil key="textColor"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Host Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5jM-hW-hKr">
+                                <rect key="frame" x="20" y="195" width="339" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Assigned To" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sAo-gi-Q75">
+                                <rect key="frame" x="20" y="232" width="339" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VqH-HG-WXe">
+                                <rect key="frame" x="289" y="307" width="70" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Contacts">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="201203-omag-organized-mind-600x411.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="WxM-4P-gnb">
-                                <rect key="frame" x="91" y="81" width="196" height="128"/>
+                                <rect key="frame" x="107" y="72" width="165" height="106"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                         <constraints>
                             <constraint firstItem="nEl-mV-DKR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="2" id="GGm-c0-cqS"/>
-                            <constraint firstItem="WxM-4P-gnb" firstAttribute="centerX" secondItem="5jM-hW-hKr" secondAttribute="centerX" id="H7r-tC-cQf"/>
+                            <constraint firstItem="WxM-4P-gnb" firstAttribute="centerX" secondItem="5jM-hW-hKr" secondAttribute="centerX" constant="9" id="H7r-tC-cQf"/>
                             <constraint firstItem="15E-fR-fm8" firstAttribute="leading" secondItem="sQX-hv-V50" secondAttribute="leading" id="JVB-7u-LMB"/>
                             <constraint firstItem="IXC-ml-JEO" firstAttribute="top" secondItem="sQX-hv-V50" secondAttribute="bottom" constant="232" id="K5b-Bs-3rj"/>
                             <constraint firstItem="15E-fR-fm8" firstAttribute="trailing" secondItem="sQX-hv-V50" secondAttribute="trailing" id="N9Z-6V-Mck"/>
+                            <constraint firstItem="sAo-gi-Q75" firstAttribute="trailing" secondItem="5jM-hW-hKr" secondAttribute="trailing" id="O5W-4c-6dx"/>
                             <constraint firstItem="sQX-hv-V50" firstAttribute="centerX" secondItem="IXC-ml-JEO" secondAttribute="centerX" constant="39.5" id="S2N-IO-0vM"/>
-                            <constraint firstItem="WxM-4P-gnb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="75" id="VLT-sN-jMR"/>
+                            <constraint firstItem="WxM-4P-gnb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="VLT-sN-jMR"/>
                             <constraint firstAttribute="trailing" secondItem="nEl-mV-DKR" secondAttribute="trailing" constant="-2" id="bUh-sm-Pto"/>
-                            <constraint firstItem="WxM-4P-gnb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="17" id="bol-z0-c94"/>
+                            <constraint firstItem="WxM-4P-gnb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="bol-z0-c94"/>
                             <constraint firstItem="Nmj-EQ-Hb1" firstAttribute="top" secondItem="nEl-mV-DKR" secondAttribute="bottom" constant="8" id="cJY-PE-doT"/>
-                            <constraint firstItem="5jM-hW-hKr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="168" id="dMA-2M-4XI"/>
-                            <constraint firstItem="5jM-hW-hKr" firstAttribute="top" secondItem="WxM-4P-gnb" secondAttribute="bottom" constant="23" id="g4G-9l-WBV"/>
+                            <constraint firstItem="5jM-hW-hKr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="131" id="dMA-2M-4XI"/>
+                            <constraint firstItem="5jM-hW-hKr" firstAttribute="top" secondItem="WxM-4P-gnb" secondAttribute="bottom" constant="17" id="g4G-9l-WBV"/>
                             <constraint firstItem="15E-fR-fm8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="206" id="gtl-Ka-VdP"/>
+                            <constraint firstItem="15E-fR-fm8" firstAttribute="top" secondItem="sAo-gi-Q75" secondAttribute="bottom" constant="8" symbolic="YES" id="iJR-x5-t0M"/>
                             <constraint firstItem="5jM-hW-hKr" firstAttribute="leading" secondItem="15E-fR-fm8" secondAttribute="leading" id="kNZ-k5-hER"/>
                             <constraint firstItem="15E-fR-fm8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="pfT-BR-pq9"/>
+                            <constraint firstItem="sAo-gi-Q75" firstAttribute="leading" secondItem="5jM-hW-hKr" secondAttribute="leading" id="r2R-Sw-dcC"/>
                             <constraint firstItem="5jM-hW-hKr" firstAttribute="trailing" secondItem="15E-fR-fm8" secondAttribute="trailing" id="rYA-fN-t9Y"/>
                             <constraint firstItem="IXC-ml-JEO" firstAttribute="centerX" secondItem="Nmj-EQ-Hb1" secondAttribute="centerX" constant="-70" id="tzS-42-cw5"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Nmj-EQ-Hb1" secondAttribute="bottom" constant="67" id="us7-57-HMN"/>
@@ -91,9 +109,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="assignedTo" destination="sAo-gi-Q75" id="1U7-e5-mp8"/>
                         <outlet property="deadlineDatePicker" destination="nEl-mV-DKR" id="VuJ-Vf-vJD"/>
-                        <outlet property="hostName" destination="5jM-hW-hKr" id="rWD-P2-jwg"/>
-                        <outlet property="phoneNumber" destination="sQX-hv-V50" id="oaq-SB-4iU"/>
+                        <outlet property="hostName" destination="5jM-hW-hKr" id="fXU-Wg-Cml"/>
+                        <outlet property="phoneNumber" destination="sQX-hv-V50" id="oyA-bY-Xd8"/>
                         <outlet property="titleTextField" destination="15E-fR-fm8" id="jxS-zb-4Ep"/>
                     </connections>
                 </viewController>
@@ -101,31 +120,34 @@
             </objects>
             <point key="canvasLocation" x="1208.8" y="1010.6446776611695"/>
         </scene>
-        <!--Taskr-->
+        <!--Task Manager-->
         <scene sceneID="GO1-bI-iD4">
             <objects>
                 <tableViewController id="Efg-EM-FLL" customClass="TaskrTableViewController" customModule="Taskr" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="snD-px-95E">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" id="snD-px-95E">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="taskCell" textLabel="3x6-tB-KIo" detailTextLabel="y5x-pD-D8h" style="IBUITableViewCellStyleSubtitle" id="sXO-T9-taZ">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sXO-T9-taZ" id="Hm3-cf-Ezt">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" layoutMarginsFollowReadableWidth="YES" tableViewCell="sXO-T9-taZ" id="Hm3-cf-Ezt">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3x6-tB-KIo">
-                                            <rect key="frame" x="16" y="6" width="31.5" height="19.5"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" id="3x6-tB-KIo">
+                                            <rect key="frame" x="16" y="21.5" width="30" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <accessibility key="accessibilityConfiguration">
+                                                <accessibilityTraits key="traits" staticText="YES" adjustable="YES"/>
+                                            </accessibility>
+                                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="y5x-pD-D8h">
-                                            <rect key="frame" x="16" y="25.5" width="40.5" height="13.5"/>
+                                            <rect key="frame" x="16" y="42" width="40.5" height="13.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -140,7 +162,7 @@
                             <outlet property="delegate" destination="Efg-EM-FLL" id="BnT-Ii-M8K"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Taskr" id="OvW-EY-NJw">
+                    <navigationItem key="navigationItem" title="Task Manager" id="OvW-EY-NJw">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Mgt-fe-XAP">
                             <connections>
                                 <segue destination="BYZ-38-t0r" kind="show" id="SKm-Ba-c7i"/>

@@ -53,7 +53,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ application: UIApplication, handleActionWithIdentifier identifier: String?, for notification: UILocalNotification, completionHandler: @escaping () -> Void) {
-        let task = Task(ID: notification.userInfo!["ID"] as! String, title: "", deadline: notification.fireDate!)
+        let task = Task(ID: notification.userInfo!["ID"] as! String, title: "", deadline: notification.fireDate!, hostname: " ", phone: " ", assignee: " ")
         switch identifier! {
         case "ACTION_COMPLETE":
             TaskList.sharedInstance.removeTask(task)

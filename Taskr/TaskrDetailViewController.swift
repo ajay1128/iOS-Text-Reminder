@@ -5,9 +5,12 @@ class TaskrDetailViewController: UIViewController {
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var deadlineDatePicker: UIDatePicker!
     
-    @IBOutlet weak var phoneNumber: UITextField!
+    @IBOutlet weak var hostName: UITextField?
     
-    @IBOutlet weak var hostName: UITextField!
+    
+    @IBOutlet weak var phoneNumber: UITextField?
+    
+    @IBOutlet weak var assignedTo: UITextField?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +23,7 @@ class TaskrDetailViewController: UIViewController {
     }
 
     @IBAction func save(_ sender: AnyObject) {
-        let task = Task(ID: UUID().uuidString, title: titleTextField.text!,deadline: deadlineDatePicker.date)
+        let task = Task(ID: UUID().uuidString, title: titleTextField.text!,deadline: deadlineDatePicker.date, hostname: hostName?.text ?? " ", phone: phoneNumber?.text ?? " ", assignee: assignedTo?.text ?? " ")
         TaskList.sharedInstance.addTask(task)
         self.navigationController?.popToRootViewController(animated: true)
     }
@@ -37,8 +40,8 @@ class TaskrDetailViewController: UIViewController {
         ]
         
         let parameters: Parameters = [
-            "To":  phoneNumber.text! ,
-            "Body":  hostName.text! + " has assigned the task " + titleTextField.text! + " " + dateFormatter.string(from: deadlineDatePicker.date)
+            "To":  phoneNumber!.text! ,
+            "Body":  hostName!.text! + " has assigned the task " + titleTextField.text! + " " + dateFormatter.string(from: deadlineDatePicker.date)
         ]
         
         Alamofire.request("https://black-locust-4228.twil.io/sms", method: .post, parameters: parameters, headers: headers).response { response in
